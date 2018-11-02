@@ -1,4 +1,4 @@
-<!doctypepe html>
+<!doctype html>
 <html>
 <head>
 <link></link>
