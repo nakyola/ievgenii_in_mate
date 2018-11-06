@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Испытание: редактирование профиля</title>
+    <style>
+	html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 350px;
+  padding: 10px 20px;
+
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "Arial", sans-serif;
+  color: black;
+}
+
+h1 {
+  margin: 0;
+}
+</style>
+
+  </head>
+  <body>
+    <h1>Профиль</h1>
+
+      <form action="https://echo.htmlacademy.ru" method="post" entype="multipart/form-data">
+      <label>
+        Ваш пол: <input type="radio" name="sex"> Мужской
+        <input type="radio" name="sex">Женский<br>
+      Месяц и год рождения:<br>
+        </label>
+        <label>
+          <select name="month">
+            <option>Январь</option>
+            <option>Февраль</option>
+            <option>Март</option>
+            <option>Апрель</option>
+            <option>Май</option>
+            <option>Июнь</option>
+            <option>Июль</option>
+            <option>Август</option>
+            <option>Сентябрь</option>
+            <option>Октябрь</option>
+            <option>Ноябрь</option>
+            <option>Декабрь</option>
+          </select>
+          <select name="year">
+            <option>1990</option>
+            <option>1991</option>
+            </select><br>
+      Знакомые технологии:<br>
+      <select name="IT" multiple size="4">
+            <option>HTML</option>
+            <option selected>CSS</option>
+            <option>JavaScript</option>
+            <option>Node.js</option>
+            </select><br>
+      Фото: <input type="file" name="hz">
+      <input type="submit" value="Сохранить">
+    </form>
+  </body>
+</html>

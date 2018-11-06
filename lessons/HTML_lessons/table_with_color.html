@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="utf-8">
+    <title>Испытание: итоговая таблица</title>
+    <link rel="stylesheet" href="style.css">
+	<style>
+	body {
+  width: 350px;
+  margin: 0;
+  padding: 0 10px;
+
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+}
+
+table{
+  border-collapse: collapse;
+
+}
+
+th{
+  background-color: darkcyan;
+  color: white;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  width:33%;
+  padding: 10px;
+}
+
+td{
+  border-bottom:1px solid lightgrey;
+  width:33%;
+  padding: 10px;
+}
+.stolb1{
+  text-align:left;
+}
+.stolb2{
+  text-align:center;
+}
+.stolb3{
+  text-align:right;
+}
+.yellowstr{
+background-color:lightyellow;
+}
+	</style>
+	
+  </head>
+  <body>
+    <h1>Итоговая таблица</h1>
+    <table>
+      <tr>
+        <th class="stolb1">Город</th>
+        <th class="stolb2" style="background-color:lightblue">Посещений</th>
+        <th class="stolb3">%</th>
+      </tr>
+      <tr>
+        <td class="stolb1">СПб</td>
+        <td class="stolb2">199</td>
+        <td class="stolb3">65.12</td>
+      </tr>
+      <tr class="yellowstr">
+        <td class="stolb1">Москва</td>
+        <td class="stolb2">69</td>
+        <td class="stolb3">21.3</td>
+      </tr>
+      <tr>
+        <td class="stolb1">Киев</td>
+        <td class="stolb2">5</td>
+        <td class="stolb3">8</td>
+      </tr>
+      <tr class="yellowstr">
+        <td colspan="2" class="stolb1">Посещений за весь период</td>
+        <td class="stolb3">273</td>
+      </tr>      
+    </table>
+  </body>
+</html>
+
+
