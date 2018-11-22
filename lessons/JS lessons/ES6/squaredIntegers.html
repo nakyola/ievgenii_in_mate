@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>first test</title>
+</head>
+<body>
+    <script>
+        
+const realNumberArray = [-2, 5, -9.8, 3.14, 4.2, 16, 8.34, -2]; // podstavliaem chusla, polyshaem result
+const squareList = (arr) => {
+  "use strict";
+  const squaredIntegers = arr.filter((num)=>num>0 &&num%parseInt(num)===0).map((num)=>Math.pow(num, 2));
+  return squaredIntegers;
+};
+const squaredIntegers = squareList(realNumberArray);
+console.log(squaredIntegers);
+
+	alert(squaredIntegers);
+        
+    </script>
+</body>
+</html>

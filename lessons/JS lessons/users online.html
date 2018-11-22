@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>first test</title>
+</head>
+<body>
+    <script>
+        
+let users = {
+  Alan: {
+    age: 27,
+    online: false
+  },
+  Jeff: {
+    age: 32,
+    online: true
+  },
+  Sarah: {
+    age: 48,
+    online: false
+  },
+  Ryan: {
+    age: 19,
+    online: true
+  }
+};
+
+function countOnline(obj) {
+  // change code below this line
+  let onlineCount=0;
+  for (let user in users){
+    console.log(user);
+    console.log(users[user].online);
+    for (let data in user){
+      if (users[user].online ===true){
+        onlineCount = onlineCount+1;
+        break;
+      }
+    }
+  }
+  return onlineCount;
+  // change code above this line
+}
+
+console.log(countOnline(users));
+    </script>
+</body>
+</html>

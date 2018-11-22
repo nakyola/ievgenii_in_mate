@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+
+function sequentialSizes(val) {
+  var answer = "";
+  switch (val) {
+    case 1:
+    case 2:
+    case 3:
+    return "Low";
+    break;
+    case 4:
+    case 5:
+    case 6:
+    return "Mid";
+    break;
+    case 7:
+    case 8:
+    case 9:
+    return "High";
+    break;
+  }
+    return answer;  
+}
+
+    </script>
+    <title>first test</title>
+</head>
+<body>
+    <script type="text/javascript">
+        alert("if 1 ="+sequentialSizes(1)); /*if 1,2,3 we have Low, if 4,5,6 - High!!*/
+    </script>
+</body>
+</html>

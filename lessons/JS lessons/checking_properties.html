@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+var myObj = {
+  gift: "pony",
+  pet: "kitten",
+  bed: "sleigh"
+};
+
+function checkObj(checkProp) {
+  if (myObj.hasOwnProperty(checkProp)==true){
+    return myObj[checkProp];
+  } 
+  else {
+    return "Not Found";
+  }
+  return "Change Me!";
+}
+
+    </script>
+    <title>first test</title>
+</head>
+<body>
+    <script type="text/javascript">
+        alert("Does #gift# have property? ="+checkObj("gift"));
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+
+function switchOfStuff(val) {
+  var answer = "";
+  switch (val){
+    case "a": return "apple";
+    break;
+    case "b": return "bird";
+    break;
+    case "c": return "cat";
+    break;
+    default: return "stuff";
+    break;
+  }
+    return answer;  
+}
+
+    </script>
+    <title>first test</title>
+</head>
+<body>
+    <script type="text/javascript">
+        alert("if 1 ="+switchOfStuff(1)); /*if a,b,c, we have cases, if not - default!!*/
+    </script>
+</body>
+</html>

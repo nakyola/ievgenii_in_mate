@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+    	var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+function golfScore(par, strokes) {
+  if (strokes==1) {
+    return "Hole-in-one!";
+  }
+  else if (strokes<=par-2) {
+    return "Eagle";
+  }
+  else if (strokes==par-1) {
+    return "Birdie";
+  }
+  else if (strokes==par) {
+    return "Par";
+  }
+  else if (strokes==par + 1) {
+    return "Bogey";
+  }
+  else if  (strokes==par+2) {
+    return "Double Bogey";
+  }
+  else if  (strokes>= par + 3) {
+    return "Go Home!";
+  }
+  else{
+    return "Change Me";
+  }
+}
+
+    </script>
+    <title>first test</title>
+</head>
+<body>
+    <script type="text/javascript">
+        alert("5 / 2="+golfScore(5, 2));
+    </script>
+</body>
+</html>

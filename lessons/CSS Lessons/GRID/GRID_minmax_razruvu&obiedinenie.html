@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta></meta>
+<title>Lets learn!!</title>
+<link></link>
+<style>
+  .item1{background:LightSkyBlue;}
+  .item2{background:LightSalmon;justify-self:end;} /*вирівнювання*/
+  .item3{background:PaleTurquoise;align-self:end;} /*вирівнювання*/
+  .item4{background:LightPink; grid-row:2/4;}/* obiedineniie */
+  
+  .item5 {
+    background: PaleGreen;
+    grid-column: 2 / 4;/* obiedineniie */
+    grid-row:2/4;/* obiedineniie */
+  }
+  
+  .container {
+    font-size: 40px;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(90px,1fr)); /* три однакові секції по стовцям, але з перевіркою на мінмакс*/
+    grid-template-rows: 1fr 1fr 1fr; /* три однакові секції по рядкам,  те ж саме, що repeat(3, 1fr);*/
+    grid-gap: 10px;/* razruvu */
+  }
+</style>
+</head>
+
+<body>
+
+<h1>new site will be here</h1>
+
+<div class="container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+
+function phoneticLookup(val) {
+  var result = "";
+  var lookup={
+    "alpha": "Adams",
+    "bravo":"Boston",
+    "charlie":"Chicago",
+    "delta":"Denver",
+    "echo":"Easy",
+    "foxtrot":"Frank"
+  };
+  result = lookup[val]; 
+  return result;
+}
+
+    </script>
+    <title>first test</title>
+</head>
+<body>
+    <script type="text/javascript">
+        alert("if charlie than "+phoneticLookup("charlie"));
+    </script>
+</body>
+</html>

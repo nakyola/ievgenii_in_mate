@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<style>
+
+body{
+	padding: 0;
+	margin: 0;
+}
+header{
+	width: 100%;
+	background: lightgreen;
+}
+
+header li{
+	display: inline-block; 
+}
+header a{
+	text-decoration: none;
+}
+.header-wrap{
+	width: 960px;
+	margin: 0 auto;
+	display: flex;	
+	justify-content: space-between;
+}
+
+input{
+	margin: 15px 0;
+}
+  
+  main{
+  	display: flex;
+  	width: 75%;
+  	margin: 0 auto;	 
+  }
+  section{
+  	width: 70%;
+  }
+  aside{
+  	width: 30%;
+  }
+  .post-itm{
+  	display: inline-block; 
+  	width: 23%;
+  }
+
+@media screen and (max-width: 980px){
+  	input{
+  		display: none;
+  	}
+}
+
+@media screen and (max-width: 800px){
+  	.post-itm{
+  		width: 32%;
+  	}
+ }
+
+@media screen and (max-width: 600px){
+  	.post-itm{
+  		width: 48%;
+  	}
+  	main{
+  	flex-direction: column;	
+  	}
+  	section{
+  		width: 90%;
+  	}
+  	aside{
+  		width: 100%
+  	}
+}
+
+
+</style>
+
+
+</head>
+
+<body>
+<header>
+	<div class="header-wrap">
+		<nav>
+			<ul class="main-nav">
+				<li class="nav-itm"><a href="#">Hi</a></li>
+				<li class="nav-itm"><a href="#">Hello</a></li>
+				<li class="nav-itm"><a href="#">Aloha</a></li>
+			</ul>
+		</nav>
+		<input type="search" name="">
+	</div>
+</header>
+
+<main>
+	<section>
+		<article class="post">
+			<h1>New post</h1>
+			<div class="post-itm"><img src="pic.jpg" alt="pic"></div>
+			<div class="post-itm"><img src="pic.jpg" alt="pic"></div>
+			<div class="post-itm"><img src="pic.jpg" alt="pic"></div>
+			<div class="post-itm"><img src="pic.jpg" alt="pic"></div>
+			<div class="post-itm"><img src="pic.jpg" alt="pic"></div>
+			<div class="post-itm"><img src="pic.jpg" alt="pic"></div>
+			<div class="post-itm"><img src="pic.jpg" alt="pic"></div>
+			<div class="post-itm"><img src="pic.jpg" alt="pic"></div>
+		</article>
+	</section>
+	<aside>
+		<a href="#">Hi</a>
+		<a href="#">Hello</a>
+		<a href="#">Aloha</a>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</aside>
+</main>
+
+</body>
+</html>
