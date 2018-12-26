@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+    <link href="" rel="stylesheet">
+    <style>
+    .pink, .blue, .orange {
+  position: absolute;
+}
+
+.pink {
+  filter: hue-rotate(20deg); /* also creates a new stacking context */
+  top: 40px;
+  left: 40px;
+  background: rgb(239, 71, 111);
+}
+
+.blue {
+  z-index: 2;
+  top: 80px;
+  left: 80px;
+  background: rgb(17, 138, 178);
+}
+
+.green {
+  z-index: 100; /* has no effect */
+  background: rgb(6, 214, 160);
+}
+
+.orange {
+  z-index: 3;
+  height: 100px;
+  width: 100px;
+  background: rgb(255, 209, 102);
+  font-size: 14px;
+}
+
+div {
+  height: 150px;
+  width: 150px;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  text-align: right;
+  padding: 5px;
+  box-sizing: border-box;
+}
+    </style>
+  </head>
+  <body>
+<div class="pink positioned">
+  Positioned
+  <div class="orange positioned">Positioned</div>
+</div>
+
+<div class="blue positioned">Positioned</div>
+
+<div class="green non-positioned">Non-positioned</div>
+  </body>
+</html>

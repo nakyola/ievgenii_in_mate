@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta></meta>
+<title>Lets learn!!</title>
+<link></link>
+<style>
+  p {
+    padding-left:60px;
+  }
+  #foo{
+  border-radius:50px;
+  width:50px;
+  height:50px;
+  background:#c00;
+  position:absolute;
+  top:0;
+  left:0;
+  -moz-transition: transform 1s; 
+  -webkit-transition: transform 1s;  
+  -ms-transition: transform 1s;  
+  -o-transition: transform 1s;  
+  transition: transform 1s;  
+}
+</style>
+  <script>
+var f = document.getElementById('foo');
+document.addEventListener('click', function(ev){
+    f.style.transform = 'translateY('+(ev.clientY-25)+'px)';
+    f.style.transform += 'translateX('+(ev.clientX-25)+'px)';
+},false);    
+ 
+  </script>
+</head>
+
+<body>
+
+
+<p>Кликните куда-нибудь, чтобы подвинуть шар</p>
+<div id="foo"></div>
+</body>
+</html>

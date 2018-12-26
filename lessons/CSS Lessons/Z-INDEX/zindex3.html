@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+    <link href="" rel="stylesheet">
+    <style>
+.pink, .blue, .orange, .purple {
+  position: absolute;
+}
+
+.pink {
+  z-index: 1; /* creates a new stacking context */
+  top: 70px;
+  left: 70px;
+  background: rgb(239, 71, 111);
+}
+
+.blue {
+  z-index: 2;
+  top: 100px;
+  left: 100px;
+  background: rgb(17, 138, 178);
+}
+
+.green {
+  z-index: 100; /* has no effect */
+  background: rgb(6, 214, 160);
+}
+
+.orange {
+  z-index: 3;
+  height: 100px;
+  width: 100px;
+  background: rgb(255, 209, 102);
+  font-size: 14px;
+}
+
+.purple {
+  z-index: 0;
+  background: rgb(139, 91, 211);
+  top: 40px;
+  left: 40px;
+}
+
+div {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  text-align: right;
+  padding: 5px;
+  box-sizing: border-box;
+  height: 150px;
+  width: 150px;
+}
+    </style>
+  </head>
+  <body>
+<div class="pink positioned">
+  Positioned
+  <div class="orange positioned">Positioned</div>
+</div>
+
+<div class="blue positioned">Positioned</div>
+
+<div class="purple positioned">Positioned</div>
+
+<div class="green non-positioned">Non-positioned</div>
+  </body>
+</html>

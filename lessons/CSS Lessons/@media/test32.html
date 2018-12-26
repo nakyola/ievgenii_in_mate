@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta></meta>
+<title>Lets learn!!</title>
+<link></link>
+<style>
+
+.pixel {
+	height: 80px;
+	background: red;
+}
+  @media screen and (min-width: 400px) {
+  	.pixel {
+  		opacity: 0.5;
+  	}
+  }
+
+.em {
+	height: 5em;
+	background: green;
+}
+  @media screen and (min-width: 25em) {
+    .em {
+    	opacity: 0.5;
+    }
+  }
+.rem {
+	height: 5rem;
+  background: blue;
+  // 400 ÷ 16 = 25
+}
+  @media screen and (min-width: 25rem) {
+  	.rem {
+  		opacity: 0.5;
+  	}
+  }
+</style>
+</head>
+
+<body>
+<div class="pixel">Hello</div>
+<div class="em">Hello</div>
+<div class="rem">Hello</div>
+</body>
